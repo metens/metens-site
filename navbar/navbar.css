@@ -5,12 +5,13 @@
 .navie {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 #home-icon {
   width: 35px;
 }
+
 #home-icon:hover {
   transform: scale(1.1);
 }
