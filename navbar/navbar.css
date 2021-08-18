@@ -1,0 +1,29 @@
+.navigation {
+  background-color: #202020;
+}
+
+.navie {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+#home-icon {
+  width: 35px;
+}
+#home-icon:hover {
+  transform: scale(1.1);
+}
+#home-icon:active {
+  transform: scale(0.98);
+}
+
+.navie .nav-item {
+  font-size: larger;
+  color: #f8f8f8;
+}
+
+.navie .nav-item:hover {
+  background: #f5f5f5;
+  color: #000000;
+}
