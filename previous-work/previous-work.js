@@ -1,45 +1,60 @@
 // Load the navbar from the navbar file
 $(document).ready(() => {
+  // Load the navigation html code:
     $(() => {
         $(".navigation").load("../navbar/navbar.html");
     });
-    $("#page-title").css({
+    // CSS in JQuery for styling elements:
+    $(".page-content").css({
+      "marginLeft": "15%",
+      "margin-right": "15%",
+      "height": "100%",
+      "borderRadius": "10px"
+    })
+    $("h1").css({
       "text-align": "center",
-      "color": "whitesmoke",
-      "margin-bottom": "40px",
-      // "margin-top": "50px"
+      "fontWeight": "bold"
     });
     $("h3").css({
-      "color": "whitesmoke"
+      "color": "whitesmoke",
+      "textAlign": "center",
     });
     $(".work").css({
-      "margin-left": "15%",
-      "margin-right": "15%"
+      "color": "whitesmoke",
+      "opacity": "none",
+      "padding": "30px"
+    });
+    $(".flex-container").css({
+      "display": "flex",
+      "justifyContent": "center",
+      "gap": "20px",
+      "overflow": "visible"
+    });
+    $(".oofty-image").css({
+      "opacity": "none",
+      "height": "150px",
+      "margin": "8px 0 8px 0"
+    });
+    $(".pool-image").css("height", "350px");
+    $("#copyright").append(
+      $("<div>").text("\u00A9 2021 nmetens, Inc.")
+      .css({
+          textAlign: "center",
+          color: "whitesmoke",
+          position: "relative",
+          marginBottom: "30px"
+      })
+  );
+    // Got to GitHub profile in new window:
+    $("#github").on("click", () => {
+      window.open("https://github.com/nmetens");
+    })
+    // Got to LinkedIn profile in new window:
+    $("#linkedin").on("click", () => {
+      window.open("https://www.linkedin.com/in/nathan-metens-52674521a/")
+    });
+    // Go to Yelp page for Oofty Business:
+    $("#yelp").on("click", () => {
+      window.open("https://www.yelp.com/biz/oofty-waffles-and-cr%C3%A8pes-beaverton");
     });
 });
-
-// Get the modal
-var resume_modal = document.getElementById("resume-modal");
-
-// Get the button that opens the modal
-var button = document.getElementById("btn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-button.onclick = () => {
-  resume_modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = () => {
-  resume_modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = (event) => {
-  if (event.target == resume_modal) {
-    resume_modal.style.display = "none";
-  }
-}
