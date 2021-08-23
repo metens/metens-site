@@ -1,28 +1,28 @@
-/* html,
-body {
-  margin: 0%;
-  height: 100%;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Mountain Background: */
 html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+
+  /* Mountain Background: */
   background-image: url("../images/mountain_background.jpg");
-
-  height: 100%;
-
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+
+  /* Gradient Background: */
+  /* background-color: #000000;
+  background-image: linear-gradient(150deg, #000000 0%, #434343 100%);
+  background-attachment: fixed; */
 }
 
 body {
   background-color: transparent;
-  height: 100%;
+  width: 100%;
+  min-height: 90vh;
 }
-
-/* Gradient Background (black to grey): */
-/* body {
-  background-color: #000000;
-  background-image: linear-gradient(150deg, #000000 0%, #434343 100%);
-  background-attachment: fixed;
-} */
