@@ -2,8 +2,12 @@
   background-color: rgb(0, 0, 0, 0.8);
 }
 
+#prev-work {
+  margin-top: 80px;
+}
+
 .modal {
-  height: 95vh;
+  height: 100vh;
 }
 
 #resume {
@@ -60,5 +64,6 @@ h5.modal-title {
 .linkedin:hover,
 .yelp:hover {
   background-color: white;
+  color: black;
   border-color: black;
 }

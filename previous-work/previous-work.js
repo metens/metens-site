@@ -2,38 +2,38 @@
 $(document).ready(() => {
   // Load the navigation html code:
     $(() => {
-        $(".navigation").load("../navbar/navbar.html");
+        $(".navbar").load("../navbar/navbar.html");
     });
     // CSS in JQuery for styling elements:
     $(".page-content").css({
-      "marginLeft": "15%",
-      "margin-right": "15%",
-      "height": "100%",
-      "borderRadius": "10px"
+      width: "70%",
+      margin: "auto",
+      height: "100%",
+      borderRadius: "10px"
     })
     $("h1").css({
-      "text-align": "center",
-      "fontWeight": "bold"
+      textAlign: "center",
+      fontWeight: "bold"
     });
     $("h3").css({
-      "color": "whitesmoke",
-      "textAlign": "center",
+      color: "whitesmoke",
+      textAlign: "center",
     });
     $(".work").css({
-      "color": "whitesmoke",
-      "opacity": "none",
-      "padding": "30px"
+      color: "whitesmoke",
+      opacity: "none",
+      padding: "30px"
     });
     $(".flex-container").css({
-      "display": "flex",
-      "justifyContent": "center",
-      "gap": "20px",
-      "overflow": "visible"
+      display: "flex",
+      justifyContent: "center",
+      gap: "20px",
+      overflow: "visible"
     });
     $(".oofty-image").css({
-      "opacity": "none",
-      "height": "150px",
-      "margin": "8px 0 8px 0"
+      opacity: "none",
+      height: "150px",
+      margin: "8px 0 8px 0"
     });
     $(".pool-image").css("height", "350px");
     $("#copyright").append(

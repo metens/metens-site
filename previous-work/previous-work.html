@@ -6,33 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Previous Work</title>
 
-        <!-- Outsource Files: -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
+    <!-- Bootstrap links for navbar functionality: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
-    
-        <!-- Files for this page: -->
-        <script defer src="previous-work.js"></script>
-        <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
-        <link rel="stylesheet" type="text/css" href="previous-work.css">
-    
+    <!-- Link to font-awesome for use of icons: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+
+    <!-- Page styling links: -->
+    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
+    <script defer src="previous-work.js"></script>
+    <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
+    <link rel="stylesheet" type="text/css" href="previous-work.css">
   </head>
   <body>
-
     <!-- The navigation is linked from the "navbar" folder in my-projects.js -->
-    <nav class="navigation"></nav>
+    <nav class ="navbar navbar-expand-md"></nav>
 
-    <h1>Previous Work</h1>
+    <h1 id="prev-work">Previous Work</h1>
 
-    <main class="page-content">
-      <div class="button-container mt-4">
+    <main class="page-content mt-5">
+      <div class="button-container">
         <!-- Resume Button: -->
         <button id="resume" type="button" class="btn btn-info resume" data-bs-toggle="modal" data-bs-target="#modal">
           <i class="fas fa-1.5x fa-graduation-cap"></i>
@@ -56,7 +54,7 @@
       </div>
 
       <!-- Resume modal code when the resume button is pressed: -->
-      <div class="modal fade mt-5" id="modal" tabindex="-1">
+      <div class="modal fade" id="modal" tabindex="-1">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -70,31 +68,31 @@
         </div>
       </div>
 
-    <section class="work work1">
-      <h3>2016 - Present: Oofty Waffles & Crepes</h3>
-      <p id="oofty">In 2016, my sisters and I began helping my parents with the family business. My dad had built his very own waffle/crepe truck from scratch, using a Uhaul truck as his base. His brother had a pizza truck in Belgium, and it was successful, so this inspired my father to bring Belgian pastries to Portland and Beaverton for people to enjoy. My sisters and I would help the business at farmers' markets every weekend by cashiering, decorating the waffles/crepes with toppings, and baking the waffles/crepes. Every year, the popularity of this little business started growing, and my father would get asked if he had a restaurant or a website. He had neither. He began scouting the area for more places to sell the delicious pastries. He had a spot at the OHSU market, the Beaverton Saturday Market, and he often rented space in parking lots during the week. Eventually, we were getting asked to cater at special events, like weddings, back-to-school days, Belgian International parties, birthdays, and the like. 
-        
-      <div class="oofty-images flex-container">
-        <img class="oofty-image" src="../images/crepe-savory.jpg" alt="Photo of savory crepe with ham, cheese, and spinach">
-        <img class="oofty-image" src="../images/waffles.jpg" alt="Photo of three Liege waffles">
-        <img class="oofty-image" src="../images/crepe.jpg" alt="Photo of a sweet nutella crepe with whip cream, cinnamon, and strawberries on top">
-      </div>
+      <section class="work work1">
+        <h3>2016 - Present: Oofty Waffles & Crepes</h3>
+        <p id="oofty">In 2016, my sisters and I began helping my parents with the family business. My dad had built his very own waffle/crepe truck from scratch, using a Uhaul truck as his base. His brother had a pizza truck in Belgium, and it was successful, so this inspired my father to bring Belgian pastries to Portland and Beaverton for people to enjoy. My sisters and I would help the business at farmers' markets every weekend by cashiering, decorating the waffles/crepes with toppings, and baking the waffles/crepes. Every year, the popularity of this little business started growing, and my father would get asked if he had a restaurant or a website. He had neither. He began scouting the area for more places to sell the delicious pastries. He had a spot at the OHSU market, the Beaverton Saturday Market, and he often rented space in parking lots during the week. Eventually, we were getting asked to cater at special events, like weddings, back-to-school days, Belgian International parties, birthdays, and the like. 
+          
+        <div class="oofty-images flex-container">
+          <img class="oofty-image" src="../images/crepe-savory.jpg" alt="Photo of savory crepe with ham, cheese, and spinach">
+          <img class="oofty-image" src="../images/waffles.jpg" alt="Photo of three Liege waffles">
+          <img class="oofty-image" src="../images/crepe.jpg" alt="Photo of a sweet nutella crepe with whip cream, cinnamon, and strawberries on top">
+        </div>
 
-      Last week I was helping my mother and father at a wedding to prepare, decorate, and serve over one hundred people our waffles. It hit me that I needed to create a website for our family business — formally called <b>"Oofty Waffles & Crepes"</b> — when four wedding guests asked my dad for more information about his location, catering, and contact. They had loved the waffles so much and wanted more. They asked for a business card, but he hadn't any. It would have been so much easier to say, "Why don't you visit our website 'Oofy.com' and file a catering request." I remember a few years back, I tried making a website, but I had never coded before, so I googled "how to create a website," and Wix was the first option, so that's what I went with, however, I didn't like how the bottom of each page referenced Wix.com, and I didn't want to pay Wix for the website. Now that I have successfully created and launched my own personal website from scratch (using HTML, CSS, and JavaScript), I am equipped with the necessary skills to craft a starter website for our family business. My next project, to do just that.</p>
-    </section>
-    <section class="work work2">
-      <h3>2018 - 2019: Tualatin Hills Red Cross Lifegaurd</h3>
-      <p id="lifegaurd"> I also worked as a lifeguard for one year at the local aquatic center from 2018-2019. This job allowed me to stay fit because I had to attend monthly in-service weekends where I had to swim and perform dummy rescues to make sure I was ready in case of an emergency. I often biked or ran to the pool (two miles away from home) to swim before work. This was when I became interested in running races such as half marathons and sprint triathlons. There was one incident where I had to put my skills to the test. One day at a summer open swim, a little girl fell backward from the jungle joe inflatable and bounced on her head at the bottom, then fell into the water. I instantly blew my whistle three times, signaling for an emergency, and rescued the girl with the help of fellow lifeguards to make sure her spin wasn't further agitated. After the paramedics arrived, they checked on the little girl, and she was fine. That was a close call.</p>
+        Last week I was helping my mother and father at a wedding to prepare, decorate, and serve over one hundred people our waffles. It hit me that I needed to create a website for our family business — formally called <b>"Oofty Waffles & Crepes"</b> — when four wedding guests asked my dad for more information about his location, catering, and contact. They had loved the waffles so much and wanted more. They asked for a business card, but he hadn't any. It would have been so much easier to say, "Why don't you visit our website 'Oofy.com' and file a catering request." I remember a few years back, I tried making a website, but I had never coded before, so I googled "how to create a website," and Wix was the first option, so that's what I went with, however, I didn't like how the bottom of each page referenced Wix.com, and I didn't want to pay Wix for the website. Now that I have successfully created and launched my own personal website from scratch (using HTML, CSS, and JavaScript), I am equipped with the necessary skills to craft a starter website for our family business. My next project, to do just that.</p>
+      </section>
+      <section class="work work2">
+        <h3>2018 - 2019: Tualatin Hills Red Cross Lifegaurd</h3>
+        <p id="lifegaurd"> I also worked as a lifeguard for one year at the local aquatic center from 2018-2019. This job allowed me to stay fit because I had to attend monthly in-service weekends where I had to swim and perform dummy rescues to make sure I was ready in case of an emergency. I often biked or ran to the pool (two miles away from home) to swim before work. This was when I became interested in running races such as half marathons and sprint triathlons. There was one incident where I had to put my skills to the test. One day at a summer open swim, a little girl fell backward from the jungle joe inflatable and bounced on her head at the bottom, then fell into the water. I instantly blew my whistle three times, signaling for an emergency, and rescued the girl with the help of fellow lifeguards to make sure her spine wasn't further agitated. After the paramedics arrived, they checked on the little girl, and she was fine. That was a close call.</p>
 
-      <div class="pool-images flex-container">
-        <img class="pool-image" src="../images/sitting-pool.JPG" alt="Photo of savory crepe with ham, cheese, and spinach">
-        <img class="pool-image" src="../images/standing-pool.JPG" alt="Photo of three Liege waffles">
-        <img class="pool-image" src="../images/deep-pool.JPG" alt="Photo of a sweet nutella crepe with whip cream, cinnamon, and strawberries on top">
-      </div>
-    </section>
+        <div class="pool-images flex-container">
+          <img class="pool-image" src="../images/sitting-pool.JPG" alt="Photo of savory crepe with ham, cheese, and spinach">
+          <img class="pool-image" src="../images/standing-pool.JPG" alt="Photo of three Liege waffles">
+          <img class="pool-image" src="../images/deep-pool.JPG" alt="Photo of a sweet nutella crepe with whip cream, cinnamon, and strawberries on top">
+        </div>
+      </section>
     </main>
 
+    <!-- Copyright message for professionalism: -->
     <footer id="copyright"></footer>
-
   </body>
 </html>
