@@ -4,28 +4,21 @@ $(document).ready(() => {
         $(".navbar").load("../navbar/navbar.html");
     });
     $("#title").append(
-        $("<h1>").text("Nathan")
-        .css({
-            marginLeft: "10%",
-            color: "black",
-            fontFamily: "Arial",
-            fontSize: "12rem"
-        }),
-        $("<h1>").text("Metens")
-        .css({
-            marginLeft: "25%",
-            color: "black",
-            fontFamily: "Arial",
-            fontSize: "12rem"
-        })
+        $("<h1>").attr("class", "name")
+        .attr("id", "first-name")
+        .text("Nathan"),
+        $("<h1>").attr("class", "name")
+        .attr("id", "last-name")
+        .text("Metens")
     ),
     $("#copyright").append(
-        $("<div>").text("\u00A9 2021 nmetens, Inc.")
+        $("<div>").attr("id", "copy")
+        .text("\u00A9 2021 nmetens")
         .css({
             textAlign: "center",
             color: "whitesmoke",
             position: "relative",
-            marginBottom: "30px"
+            marginBottom: "30px",
         })
     );
 });

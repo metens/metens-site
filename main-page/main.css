@@ -1,0 +1,49 @@
+@media (min-width: 900px) {
+  .name {
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 12rem;
+    text-shadow: 3px 3px 3px #000, 0 0 5px #000;
+  }
+
+  #first-name {
+    margin-left: 10%;
+  }
+
+  #last-name {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  .name {
+    margin-left: auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12rem;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #000, 0 0 5px #000;
+  }
+}
+
+@media (max-width: 640px) {
+  .name {
+    margin-left: auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 8rem;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #000, 0 0 5px #000;
+  }
+}
+
+@media (max-width: 420px) {
+  .name {
+    margin-left: auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 6rem;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #000, 0 0 5px #000;
+  }
+}
