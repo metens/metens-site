@@ -7,7 +7,7 @@ $(document).ready(() => {
         });
     });
     $("#copyright").append(
-        $("<div>").text("\u00A9 2021 nmetens, Inc.")
+        $("<div>").text("\u00A9 2021 nmetens")
         .css({
             textAlign: "center",
             color: "whitesmoke",

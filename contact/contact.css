@@ -1,8 +1,9 @@
 #contact {
-  color: black;
   font-weight: bold;
   text-align: center;
   margin-top: 80px;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px #000, 0 0 5px #000;
 }
 
 .container {
@@ -16,5 +17,24 @@
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+}
+
+@media (max-width: 465px) {
+  .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
