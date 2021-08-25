@@ -19,8 +19,8 @@ https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on
 Resume Modal:
 https://www.w3schools.com/howto/howto_css_modals.asp
 
-Carousel Tutorial:
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+Slideshow Tutorial:
+https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 Arrow for carousel/slideshow:
 https://www.toptal.com/designers/htmlarrows/arrows/
