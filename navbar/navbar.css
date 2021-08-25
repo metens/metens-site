@@ -1,3 +1,4 @@
+/* Set navbar to be fixed at the top and at the front of all other elements: */
 .navbar {
   background-color: #202020;
   position: fixed;
@@ -6,39 +7,46 @@
   z-index: 1; /* pushed the navbar in front of all other elements */
 }
 
+/* Make all proceeding elements lower than the navbar: */
 .navbar ~ * {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
+/* Home: */
 .navbar-toggler {
   background-color: whitesmoke;
 }
 
+/* Set home icon size and center: */
 #home-icon {
   width: 35px;
   margin: auto;
 }
 
+/* Increase home icon size on hover to act as button: */
 #home-icon:hover {
   transform: scale(1.1);
-  color: #a9a9a9;
 }
 
+/* Scale down home icon on click: */
 #home-icon:active {
   transform: scale(0.98);
 }
 
+/* Space navbar links and increase font size: */
 .navbar .nav-item {
-  padding-left: 25px;
+  padding-left: 30px;
   font-size: larger;
   color: #f8f8f8;
 }
 
+/* Icrease navbar item size on hover to act as button: */
 .navbar .nav-item:hover {
   color: #a9a9a9;
   transform: scale(1.01);
 }
 
+/* Decrease size slightly on click to act as button: */
 .navbar .nav-item:active {
   transform: scale(0.99);
 }
