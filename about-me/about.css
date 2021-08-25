@@ -24,7 +24,7 @@
   border-radius: 10px;
 }
 
-/*  */
+/* The container for each slide and buttons for next and prev: */
 .slideshow {
   position: relative; /* Keeps the slideshow in place */
   margin: auto;
@@ -36,14 +36,6 @@
 .slides {
   width: 100%;
   height: 100%;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0px;
 }
 
 /* Width and heigh of photos matched slides container and the photo is covered for best view without changing the photos original shape: */

@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
     // Load the navbar:
     $(() => {
@@ -30,12 +29,8 @@ function slideShow(n) {
     }
     slides[slideIndex-1].style.display = "block"; // Show the slide we are currently on
 
-    // let num = document.createElement("div");
-    // num.textContent = slideIndex;
-    // console.log(num)
-
-    // slides[slideIndex-1].appendChild(num + "/" + slides.length);
-    // slides[slideIndex-1].removeChild(num);
+    // Tried adding a slide number but after passing slide 8, the slide numbers multiply:
+    // slides[slideIndex-1].append(slideIndex + "/" + slides.length);
 }
 
 var slideIndex = 1; // The slide we are on (start on slide #1)

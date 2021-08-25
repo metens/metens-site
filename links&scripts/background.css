@@ -13,6 +13,8 @@ html {
 
   /* Mountain Background: */
   background-image: url("../images/mountain2.jpg");
+
+  /* Center and scale the image nicely: */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
