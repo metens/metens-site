@@ -9,7 +9,7 @@
 
 /* Content body with opacity background to highlight content within: */
 .container {
-  background-color: rgb(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0, 0.8);
   border-radius: 10px;
   color: whitesmoke;
   width: 80%;

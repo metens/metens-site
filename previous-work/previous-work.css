@@ -1,6 +1,6 @@
 /* The main content background with an opacity: */
 .page-content {
-  background-color: rgb(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0, 0.8);
 }
 
 /* Hide the small screen text: */
