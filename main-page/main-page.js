@@ -1,9 +1,9 @@
-
 $(document).ready(() => {
+    // Load the navbar:
     $(() => {
         $(".navbar").load("../navbar/navbar.html");
     });
-    $("#title").append(
+    $("#title").append( // Create page title using JQuery
         $("<h1>").attr("class", "name")
         .attr("id", "first-name")
         .text("Nathan"),
@@ -11,7 +11,7 @@ $(document).ready(() => {
         .attr("id", "last-name")
         .text("Metens")
     ),
-    $("#copyright").append(
+    $("#copyright").append( // Create copyright in footer element
         $("<div>").attr("id", "copy")
         .text("\u00A9 2021 nmetens")
         .css({

@@ -1,3 +1,4 @@
+/* For large screen widths: */
 @media (min-width: 900px) {
   .name {
     color: whitesmoke;
@@ -15,6 +16,7 @@
   }
 }
 
+/* For medium screen widths, center name and decrease font size: */
 @media (max-width: 900px) {
   .name {
     margin-left: auto;
@@ -26,6 +28,7 @@
   }
 }
 
+/* For smaller screen widths, keep name centered and smaller font size: */
 @media (max-width: 640px) {
   .name {
     margin-left: auto;
@@ -36,7 +39,6 @@
     text-shadow: 3px 3px 3px #000, 0 0 5px #000;
   }
 }
-
 @media (max-width: 420px) {
   .name {
     margin-left: auto;
