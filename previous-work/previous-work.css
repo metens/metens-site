@@ -1,15 +1,19 @@
+/* The main content background with an opacity: */
 .page-content {
   background-color: rgb(0, 0, 0, 0.8);
 }
 
+/* Hide the small screen text: */
 .small-size-text {
   display: none;
 }
 
+/* Enough space so that the page title is not covered by the navbar: */
 #prev-work {
   margin-top: 80px;
 }
 
+/* Let the modal take up the entire screen: */
 .modal {
   height: 100vh;
 }
@@ -18,47 +22,58 @@
   width: 100%;
 }
 
+/* The container for both the oofty images and the pool images: */
 .flex-container {
   width: 100%;
   margin: auto;
-  display: flex;
+  display: flex; /* Organize images using flex centering for easy viewing */
   justify-content: center;
   gap: 10px;
   overflow: visible;
 }
 
+/* Each image takes up about 1/3 of the flex-container so that they don't overlap: */
 .oofty-image {
-  opacity: none;
-  width: 100%;
+  width: 32%;
   margin: auto;
   object-fit: cover;
-  margin: 8px 0 8px 0;
+  margin: 8px 0 8px 0; /* Makes the images take up whole height */
+  padding: 4px;
 }
 
+/* Same as oofty images: */
 .pool-image {
-  width: 100%;
+  width: 32%;
+  margin: auto;
+  padding: 4px;
 }
 
+/* Center the modal title: */
 h5.modal-title {
   margin: auto;
 }
 
+/* Create a grid of buttons to easily organize them: */
 .button-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
   gap: 10px;
   margin: auto;
   padding: 20px;
 }
 
+/* The resume button is placed in the second column (middle) and first row: */
 .resume {
   grid-column-start: 2;
   grid-row-start: 1;
 
+  /* Resume button design: */
   color: whitesmoke;
   background-color: #007a00;
   border-color: whitesmoke;
 }
+
+/* Oragnize the rest of the buttons in the row beneath the resume in a pyramid shape: */
 .github {
   grid-column-start: 1;
   grid-row-start: 2;
@@ -84,6 +99,7 @@ h5.modal-title {
   border-color: whitesmoke;
 }
 
+/* All buttons have white background and black text color on mouse hover for consistency: */
 .resume:hover,
 .github:hover,
 .linkedin:hover,
@@ -93,16 +109,19 @@ h5.modal-title {
   border-color: black;
 }
 
-/* Change the image and button display for smaller devices */
+/* Change the image and button display for smaller devices: */
 @media (max-width: 600px) {
+  /* Hide text meant for larger screen widths: */
   .full-size-text {
     display: none;
   }
 
+  /* Show smaller text for smaller screens: */
   .small-size-text {
     display: inline;
   }
 
+  /* Make images stack on top of each other for a larger view: */
   .flex-container {
     width: 100%;
     margin: auto;
@@ -110,19 +129,21 @@ h5.modal-title {
     overflow: visible;
   }
 
+  /* Each image is as wide as the container: */
   .oofty-image {
-    opacity: none;
     width: 100%;
     margin: auto;
     padding: 5px;
   }
 
+  /* Same as oofty images: */
   .pool-image {
     width: 100%;
     margin: auto;
     padding: 5px;
   }
 
+  /* The buttons will be wrapped: */
   .button-container {
     width: 100%;
     display: flex;
@@ -130,6 +151,7 @@ h5.modal-title {
     gap: 10px;
   }
 
+  /* Each button is stacked on the other and is as wide as the container so that they are easier to tap for phones: */
   .btn {
     width: 100%;
     text-align: center;
