@@ -42,6 +42,10 @@
   filter: none; /* Adding color for more pop */
 }
 
+#progress {
+  z-index: 10;
+}
+
 /* When viewed with medium screens: */
 @media (min-width: 420px) and (max-width: 780px) {
   /* Show the hidden text to inform tablet users to tap when there is no hover effect for medium screen sizes: */

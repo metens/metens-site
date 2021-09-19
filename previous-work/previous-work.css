@@ -32,6 +32,14 @@
   overflow: visible;
 }
 
+.fais-image {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  object-fit: cover;
+  padding: 4px;
+}
+
 /* Each image takes up about 1/3 of the flex-container so that they don't overlap: */
 .oofty-image {
   width: 32%;

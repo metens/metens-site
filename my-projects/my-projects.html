@@ -27,11 +27,12 @@
   <!-- Page header: -->
   <h1 id="projects">Projects</h1>
 
-  <main class="card-deck mt-5">
+  <main class="card-deck mt-5 container">
     <!-- This text is hidden for screen width > 780 pixels: -->
     <p class="small-size-text">Here are a few of my undergraduate projects in computer science. Tap on any project to view its source code and README files in GitHub.<br><br></p>
 
-    <div class="card card1"> <!-- Project #1:-->
+    <div class="row">
+    <div class="card card1 col-6"> <!-- Project #1:-->
       <img class="card-img-top" src="../images/pendulum-image.bmp" alt="A light blue glow in the dark pendulum wave.">
       <div class="card-body">
         <h2 class="card-title">Wave Machine</h2>
@@ -39,20 +40,36 @@
       </div>
     </div>
 
-    <div class="card card2"> <!-- Project #2:--> 
+    <div class="card card2 col-6"> <!-- Project #2:--> 
       <img class="card-img-top" src="../images/c++game.bmp" alt="C++ hello world program.">
       <div class="card-body">
         <h2 class="card-title">C++ Game</h2>
         <p class="card-text full-size-text">This was a programming assignment where I needed to create a user interactive c++ game through the terminal. The game is in the form of an obstacle course, created using an array of doubly-linked lists.</p>
       </div>
     </div>
+  </div>
 
-    <div class="card card3"> <!-- Project #3:-->
+    <div class="row">
+    <div class="card card3 col-12"> <!-- Project #3:-->
       <img class="card-img-top" src="../images/java-parse.bmp" alt="Java parser program.">
       <div class="card-body">
         <h2 class="card-title">Java Parser</h2>
         <p class="card-text full-size-text">For this end-of-term project at Portland State, I needed to invent a new programming language that would be easy to use for elementary school kids. I made the language using Java to parse the code.</p>
       </div>
+    </div>
+
+    <div class="card card4 col-12"> <!-- Project #4:-->
+      <img class="card-img-top" src="../images/math.jpg" alt="Mathematic equations wallpaper.">
+      <div class="card-body position-relative">
+        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+          <h5>In Progress</h5>
+          <span class="visually-hidden">Website In Progress</span>
+        </span>
+        <h2 class="card-title">Math Website
+        </h2>
+        <p class="card-text full-size-text">My sister and I both majored in mathematics and we were especially fond of our calculus teachers, who were bothe funny, and helped us learn a lot. So we started a website for math practice together.</p>
+      </div>
+    </div>
     </div>
   </main>
 
