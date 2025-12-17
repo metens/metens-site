@@ -1,4 +1,4 @@
-# metens-site
+# metens
 Hello, this is the README for my Personal Website.
 
 This personal website was created using HTML, CSS, and JavaScript. 
