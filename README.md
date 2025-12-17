@@ -2,7 +2,7 @@
 Hello, this is the README for my Personal Website.
 
 This personal website was created using HTML, CSS, and JavaScript. 
-This file holds all the resources I used to create my first personal website @ [http://metens-site/main-page/website.html](http://metens-site/main-page/website.html). 
+This file holds all the resources I used to create my first personal website @ [https://metens.github.io/metens-site/main-page/website.html](https://metens.github.io/metens-site/main-page/website.html). 
 
 Along with tutorials from [here](https://getbootstrap.com/docs/5.1/getting-started/introduction/) as inspiration, here are my references with links to topics I researched:
 - [Hover of cards](https://thebrandsmen.com/css-image-hover-effects/)
