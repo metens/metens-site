@@ -18,7 +18,7 @@ $(document).ready(() => {
     });
     $("h3").css({ // Job titles/dates worked
       color: "whitesmoke",
-      textAlign: "center",
+      //textAlign: "center",
     });
     $(".work").css({ // Job description and details
       color: "whitesmoke",
@@ -36,14 +36,10 @@ $(document).ready(() => {
   );
     // Got to GitHub profile in new window on click:
     $("#github").on("click", () => {
-      window.open("https://github.com/nmetens");
+      window.open("https://github.com/metens");
     })
     // Got to LinkedIn profile in new window on click:
     $("#linkedin").on("click", () => {
       window.open("https://www.linkedin.com/in/nathan-metens-52674521a/")
-    });
-    // Go to Yelp page for Oofty Business on click:
-    $("#yelp").on("click", () => {
-      window.open("https://www.yelp.com/biz/oofty-waffles-and-cr%C3%A8pes-beaverton");
     });
 });
