@@ -53,20 +53,6 @@ h5.modal-title {
   margin: auto;
   padding: 20px;
 }
-/*
-.button-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.btn-fixed {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  height: 48px;
-}*/
-
 
 /* The resume button is placed in the second column (middle) and first row: */
 .resume {
