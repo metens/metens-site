@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="website-page">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About | Nathan Metens</title>
 
-    <!-- Bootstrap links for navbar functionality: -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../links&scripts/background.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Format and Design files from directories: -->
     <script defer src="about.js"></script>
-    <link rel="stylesheet" type="text/css" href="about.css">
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
 </head>
-    <body>
-        <!-- The navigation is linked from the "navbar" folder -->
-        <nav class ="navbar navbar-expand-md"></nav>
+<body>
+    <nav class="navbar navbar-expand-md"></nav>
 
-        <!-- Page title: -->
-        <h1 id="about">About Me</h1>
+    <main class="about-page container">
+      <section class="about-card">
 
-        <main class="about-me mt-5">
-          <!-- The following text is visible only for screen sizes < 615 pixels: -->
-          <p id="small-view-text">
-            Hello! I'm Nathan. I started college in 2017 when I was 16 thanks to a generous program called <a href="https://echs.beaverton.k12.or.us/">ECHS</a>. I graduated with a bachelor's in mathematics from <a href="https://www.pdx.edu/">PSU</a> in the Spring of 2021 with minors in physics and computer science. In the Fall of 2025, I graduated with a master's in computer science at PSU.<br><br>
-            My hobbies are running, basketball, chess.
-            <br><br>
-          </p>
-          <!-- The following text is visible for screen sizes > 615 pixels: -->
-          <p id="full-view-text"></p>
-            Hello! I'm Nathan. I started college in 2017 when I was 16 thanks to a generous program called <a href="https://echs.beaverton.k12.or.us/">ECHS</a>. Since then, I've attained
-            <ul>
-              <li>Associates of Science</li>
-              <li>Bachelor's of Science in Mathematics</li>
-              <li>Master's of Science in Computer Science</li>
-              <li>Graduate Certificate of Cybersecurity</li>
-            </ul>
-            My hobbies are running, basketball, chess.
-          </p>
+        <h1 class="page-title">About</h1>
+    
+        <p class="page-intro">
+            I’m Nathan Metens, a software engineer with a background in computer science,
+            mathematics, and cybersecurity. I enjoy building practical systems, teaching
+            technical material, and working on projects that combine strong theory with
+            real-world implementation.
+        </p>
+    
+        <div class="about-text">
+            <h2>My Background</h2>
+    
+            <p>
+                I started college in 2017 at age 16 through the
+                <a href="https://echs.beaverton.k12.or.us/" target="_blank" rel="noopener noreferrer">
+                Early College High School (ECHS)</a>.
+                Since then I have built a strong academic foundation in mathematics,
+                computer science, and cybersecurity.
+            </p>
+    
+            <p>
+                I earned a Bachelor of Science in Mathematics with a Physics minor from
+                <a href="https://www.pdx.edu/" target="_blank" rel="noopener noreferrer">
+                Portland State University</a>,
+                followed by a Master of Science in Computer Science and a Graduate Certificate
+                in Cybersecurity.
+            </p>
+    
+            <p>
+                My interests include backend development, systems programming,
+                cryptographic implementations, and full-stack web applications.
+            </p>
+    
+            <p>
+                Outside of software, I enjoy running, basketball, and chess.
+            </p>
+        </div>
+    
+        <div class="profile-card">
+    
+            <img class="profile-image" src="../images/me.jpeg" alt="Nathan Metens">
+    
+            <div class="quick-facts">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li>M.S. Computer Science</li>
+                    <li>Graduate Certificate in Cybersecurity</li>
+                    <li>B.S. Mathematics</li>
+                    <li>Backend / Systems / Security</li>
+                    <li>Graduate Teaching Assistant</li>
+                </ul>
+            </div>
+    
+        </div>
+    
+    </section>
+    </main>
 
-          <img class="image" src="/images/me.jpeg" width="300" alt="Nathan eating at a restaurant.">
+    <footer class="site-footer">
+        <p>© Nathan Metens</p>
+    </footer>
 
-          </section>
-        </main>
-
-        <!-- Copyright at the bottom of the page: -->
-        <!--<footer id="copyright"></footer>-->
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
