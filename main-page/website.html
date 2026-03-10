@@ -1,33 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head class="the-links">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nathan Metens - Home</title>
-
-    <!-- Bootstrap and JQuery links for navbar functionality: -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan Metens | Software Engineer</title>
     
-    <!-- Page styling links: -->
-    <script defer src="main-page.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
-    <link rel="stylesheet" tpye="text/css" href="../links&scripts/background.css">
-</head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="../navbar/navbar.css">
+        <link rel="stylesheet" href="../links&scripts/background.css">
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script defer src="main-page.js"></script>
+    </head>
 <body>
-    <!-- The navigation is linked from the "navbar" folder -->
-    <nav class ="navbar navbar-expand-md"></nav>
+    <nav class="navbar navbar-expand-md"></nav>
 
-    <!-- This title is created in JQuery in the "main-page.js" file -->
-    <section id="title"></section>    
+    <main class="home-page">
+        <section class="hero container">
+            <div class="hero-content">
+                <p class="hero-label">Software Engineer</p>
+                <h1 class="hero-title">Nathan Metens</h1>
+                <h2 class="hero-subtitle">M.S. Computer Science | Backend, Systems, Security</h2>
+                <p class="hero-description">
+                    I build full-stack web applications, REST APIs, and cryptographic software with a strong
+                    foundation in algorithms, systems, machine learning, and cybersecurity. I also bring teaching
+                    experience from leading and supporting university computer science courses.
+                </p>
 
-    <!-- This is the copy right at the bottom of the page to look more professional -->
-    <footer id="copyright"></footer>
+                <div class="hero-buttons">
+                    <a class="hero-button primary" href="../projects/projects.html">View Projects</a>
+                    <a class="hero-button secondary" href="../previous-work/previous-work.html">Experience</a>
+                    <a class="hero-button secondary" href="../contact-me/contact-me.html">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights container">
+            <div class="highlight-card">
+                <h3>Backend & Systems</h3>
+                <p>Rust, SQL, REST APIs, authentication, and full-stack application development.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h3>Security & Crypto</h3>
+                <p>Cryptographic implementations, network security, systems administration, and secure design.</p>
+            </div>
+
+            <div class="highlight-card">
+                <h3>Teaching & Leadership</h3>
+                <p>Graduate teaching assistant and technical course support specialist for computer science courses.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Nathan Metens</p>
+    </footer>
+
+    <footer id="copyright" class="site-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

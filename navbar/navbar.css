@@ -1,52 +1,94 @@
-/* Set navbar to be fixed at the top and at the front of all other elements: */
+body {
+  padding-top: 72px;
+}
+
 .navbar {
-  background-color: #202020;
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; /* pushed the navbar in front of all other elements */
+  z-index: 1000;
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Make all proceeding elements lower than the navbar: */
-.navbar ~ * {
-  margin-top: 80px;
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-/* Home: */
+.navbar-brand:hover {
+  color: #c7d8ff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .nav-link {
+  color: #f4f6fb;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+.navbar .nav-link:active {
+  transform: translateY(0);
+}
+
 .navbar-toggler {
-  background-color: whitesmoke;
+  border: none;
+  padding: 0.2rem 0.4rem;
+  box-shadow: none;
 }
 
-/* Set home icon size and center: */
-#home-icon {
-  width: 35px;
-  margin: auto;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-/* Increase home icon size on hover to act as button: */
-#home-icon:hover {
-  transform: scale(1.1);
+.navbar-toggler-icon-custom {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
-/* Scale down home icon on click: */
-#home-icon:active {
-  transform: scale(0.98);
-}
+@media (max-width: 767px) {
+  body {
+    padding-top: 68px;
+  }
 
-/* Space navbar links and increase font size: */
-.navbar .nav-item {
-  padding-left: 30px;
-  font-size: larger;
-  color: #f8f8f8;
-}
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
 
-/* Icrease navbar item size on hover to act as button: */
-.navbar .nav-item:hover {
-  color: #a9a9a9;
-  transform: scale(1.01);
-}
+  .navbar-collapse {
+    margin-top: 0.75rem;
+    background: rgba(20, 20, 20, 0.98);
+    border-radius: 14px;
+    padding: 0.75rem;
+  }
 
-/* Decrease size slightly on click to act as button: */
-.navbar .nav-item:active {
-  transform: scale(0.99);
+  .navbar-nav {
+    align-items: stretch;
+    gap: 0.25rem;
+  }
+
+  .navbar .nav-link {
+    padding: 0.7rem 0.9rem;
+  }
 }
