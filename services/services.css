@@ -1,0 +1,250 @@
+body {
+    color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  
+  .services-page {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .services-card {
+    max-width: 1100px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+  }
+  
+  .page-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.65);
+  }
+  
+  .page-intro {
+    max-width: 900px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #eef3ff;
+    margin-bottom: 24px;
+  }
+  
+  .section-block {
+    margin-top: 34px;
+  }
+  
+  .section-block h2 {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    color: white;
+  }
+  
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+  }
+  
+  .action-button {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .action-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .action-button.primary {
+    background: #7aa2ff;
+    color: white;
+  }
+  
+  .action-button.secondary {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  
+  .service-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .service-item p {
+    margin: 0;
+    line-height: 1.65;
+    color: #edf2fb;
+  }
+  
+  .process-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 18px;
+  }
+  
+  .step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #7aa2ff;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  
+  .process-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: white;
+  }
+  
+  .process-step p {
+    margin: 0;
+    line-height: 1.65;
+    color: #edf2fb;
+  }
+  
+  .pricing-note {
+    max-width: 900px;
+    line-height: 1.7;
+    color: #eef3ff;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  
+  .pricing-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 22px;
+  }
+  
+  .pricing-card.featured {
+    border-color: rgba(122, 162, 255, 0.55);
+    box-shadow: 0 0 0 1px rgba(122, 162, 255, 0.15);
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: white;
+  }
+  
+  .price {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #c7d8ff;
+    margin-bottom: 14px;
+  }
+  
+  .pricing-card ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+  
+  .pricing-card li {
+    margin-bottom: 10px;
+    line-height: 1.55;
+    color: #edf2fb;
+  }
+  
+  .closing-cta p {
+    max-width: 850px;
+    line-height: 1.75;
+    color: #eef3ff;
+    margin-bottom: 18px;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 16px;
+    color: #d7deef;
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 900px) {
+    .service-grid,
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .services-page {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+  
+    .services-card {
+      padding: 20px;
+    }
+  
+    .page-intro,
+    .pricing-note,
+    .closing-cta p,
+    .service-item p,
+    .process-step p,
+    .pricing-card li {
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+  
+    .cta-row {
+      flex-direction: column;
+    }
+  
+    .action-button {
+      text-align: center;
+    }
+  
+    .process-step {
+      gap: 12px;
+    }
+  }
