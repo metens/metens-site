@@ -1,154 +1,153 @@
-/* Creating the page title: */
-#projects {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 80px;
-  color: whitesmoke;
-  text-shadow: 3px 3px 3px #000, 0 0 5px #000; /* Adding shadow to the title so it pops */
+body {
+  color: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
-/* Hiding the small-size-text while in large view: */
-.small-size-text {
-  display: none;
+.projects-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-main {
-  background: rgb(0, 0, 0, 0.8);
-  border-radius: 20px;
-  color: whitesmoke;
-  width: 70%;
+.projects-card {
+  max-width: 1100px;
   margin: auto;
-}
-
-.gallery-item {
-  padding: 10px;
-  width: 100%;
-}
-
-div.gallery-item:hover {
-  border: 1px solid #777;
-}
-
-/*  Creating the black opacity background of the page:*/
-.card-deck {
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  margin: auto; /* Centering */
+  background: rgba(0, 0, 0, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
   padding: 30px;
-  width: 80%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
 
-/* Adding card details: */
-.card {
-  cursor: pointer;
-  width: 14rem;
-  height: 30rem;
-  background-color: #5b6467;
-  background-image: linear-gradient(315deg, #c0c0c0 0%, #ffffff 74%);
-  color: black;
-  text-align: center;
-  margin: auto;
-  transition: 1s ease; /* When hovered over */
-  filter: grayscale(80%);
-  overflow: auto;
+.page-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.65);
 }
 
-/* Effect when mouse hover: */
-.card:hover {
-  transform: scale(1.05); /* Increases card size to act as button */
-  filter: none; /* Adding color for more pop */
+.page-intro {
+  max-width: 900px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #eef3ff;
+  margin-bottom: 26px;
 }
 
-#progress {
-  z-index: 10;
-}
-
-/* When viewed with medium screens: */
-@media (min-width: 420px) and (max-width: 780px) {
-  /* Show the hidden text to inform tablet users to tap when there is no hover effect for medium screen sizes: */
-  .small-size-text {
-    display: inline;
-    color: whitesmoke;
-  }
-
-  /* Style card deck for better viewing: */
-  .card-deck {
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    width: 80%;
-  }
-
-  /* Smaller card titles for better card viewing: */
-  .card-title {
-    font-size: 1.2rem;
-  }
-
-  .card {
-    width: 100%;
-  }
-}
-
-/* For smaller screens such as phones: */
-@media (max-width: 420px) {
-  /* Show the hidden text to inform phone users to tap when there is no hover effect for touch screens: */
-  .small-size-text {
-    display: inline;
-    color: whitesmoke;
-  }
-
-  /* Hide the project info to save space on mobile devices: */
-  .full-size-text {
-    display: none;
-  }
-
-  /* Wrap the cards so that they are stacked: */
-  .card-deck {
-    gap: 2px;
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  /* Smaller project titles: */
-  .card-title {
-    font-size: 1.5rem;
-  }
-
-  /* Smaller card sizes: */
-  .card {
-    filter: none;
-    width: 13rem;
-    height: 11rem;
-    overflow: hidden;
-  }
-}
-
-.gallery {
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-  gap: 30px;
-  max-width: 700px;   /* optional */
-  margin: 0 auto;     /* center the gallery */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 
-.gallery-item {
-  text-align: center;
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
 }
 
-.gallery-item img {
+.project-card img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
-@media (max-width: 600px) {
-  .gallery {
+.project-content {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-content h2 {
+  font-size: 1.22rem;
+  margin: 0;
+  color: white;
+}
+
+.project-subtitle {
+  margin: 0;
+  line-height: 1.6;
+  color: #edf2fb;
+}
+
+.project-tech {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #c7d8ff;
+}
+
+.project-links {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.project-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  color: white;
+  text-decoration: none;
+}
+
+.project-button.primary {
+  background: #7aa2ff;
+  color: white;
+}
+
+.project-button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 16px;
+  color: #d7deef;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
-    max-width: 70%;   /* optional */
   }
 }
 
-#copy-right {
-  text-align: center;
+@media (max-width: 640px) {
+  .projects-page {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .projects-card {
+    padding: 20px;
+  }
+
+  .page-intro,
+  .project-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
 }
