@@ -2,54 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact | Nathan Metens</title>
 
-    <!-- Bootstrap links for navbar functionality: -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../links&scripts/background.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
-    <!-- Files for this page: -->
     <script defer src="contact.js"></script>
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-md"></nav>
 
-    <!-- The navigation is linked from the "navbar" folder in my-projects.js -->
-    <nav class ="navbar navbar-expand-md"></nav>
+    <main class="contact-page container">
+        <section class="contact-card">
+            <h1 class="page-title">Contact</h1>
 
-    <!-- Page title: -->
-    <h1 id="contact">Contact Me Here:</h1>
+            <p class="page-intro">
+                I’m interested in software engineering, backend, systems, and security-focused opportunities. Feel free to reach out!
+            </p>
 
-    <main class="container mt-5">
-        <form class="mx-auto p-4"> <!-- Contact form: -->
-            <div class="form-group">
-                <label for="first-name">Your Name</label>
-                <input type="name" class="form-control" id="first-name" placeholder="First Name"/>
-            </div>
-          <div class="form-group">
-            <label for="email">Your Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="email@example.com"/>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="Start typing here..."></textarea>
-          </div>
-          <div class="form-group my-4 buttons">
-            <input id="submit-btn" type="submit" class="btn btn-primary" value="Send Message" />
-            <input id="reset-btn" type="reset" class="btn btn-secondary" value="Reset Form" />
-          </div>
-        </form>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row-custom">
+                    <div class="form-group">
+                        <label for="first-name">Your Name</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="button-row">
+                    <input id="submit-btn" type="submit" class="action-button primary" value="Send Message">
+                    <input id="reset-btn" type="reset" class="action-button secondary" value="Reset">
+                </div>
+            </form>
+        </section>
     </main>
 
-    <!-- Copyright footer: -->
-    <footer id="copyright"></footer>
+    <footer class="site-footer">
+        <p>© Nathan Metens</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
