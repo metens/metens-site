@@ -1,130 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previous Work</title>
+    <title>Experience | Nathan Metens</title>
 
-    <!-- Bootstrap links for navbar functionality: -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="previous-work.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../links&scripts/background.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Link to font-awesome for use of icons: -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-
-    <!-- Page styling links: -->
     <script defer src="previous-work.js"></script>
-    <link rel="stylesheet" type="text/css" href="previous-work.css">
-    <link rel="stylesheet" type="text/css" href="../navbar/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../links&scripts/background.css">
-  </head>
-  <body>
-    <!-- The navigation is linked from the "navbar" folder in my-projects.js -->
-    <nav class ="navbar navbar-expand-md"></nav>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md"></nav>
 
-    <!-- Page title: -->
-    <h1 id="prev-work">Work Experience</h1>
+    <main class="experience-page container">
+        <section class="experience-card">
+            <h1 class="page-title">Experience</h1>
 
-    <main class="page-content mt-5">
+            <p class="page-intro">
+                My background includes software instruction, technical support, public service, and field operations. These roles strengthened my communication, technical problem-solving, leadership, and ability to perform under pressure.
+            </p>
 
-      <div class="button-container">
-        <button type="button" class="btn btn-info btn-fixed" data-bs-toggle="modal" data-bs-target="#modal">
-          <i class="fas fa-lg fa-graduation-cap"></i>
-          <span>My Resume</span>
-        </button>
-      
-        <button id="github" type="button" class="btn btn-info btn-fixed">
-          <i class="fab fa-lg fa-github"></i>
-          <span>My GitHub</span>
-        </button>
-      
-        <button id="linkedin" type="button" class="btn btn-info btn-fixed">
-          <i class="fab fa-lg fa-linkedin"></i>
-          <span>My LinkedIn</span>
-        </button>
-      </div>
-
-      <!-- Resume modal code when the resume button is pressed (skeleton from Bootstrap): -->
-      <div class="modal fade" id="modal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Nathan's Student Resume</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="action-buttons">
+                <a class="action-button primary" href="../files/Nathan_Metens_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a class="action-button secondary" href="https://github.com/nmetens" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <div class="modal-body">
-              <img id="resume" src="../images/Nathan-Metens-Resume.png" alt="Nathan's student resume">
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <section class="work work4">
-        <h3>October 2025 - December 2025: Graduate Teaching Assistant</h3>
-        <p></p>
-        <ul>
-          <li>Support instruction for CS 161: Introduction to Computer Science.</li>
-          <li>Deliver independent lectures and live coding demonstrations.</li>
-          <li>Hold weekly office hours assisting with Python fundamentals and conceptual topics.</li>
-          <li>Grade assignments with clear and constructive feedback.</li>
-        </ul>
-      </section>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>Graduate Teaching Assistant</h2>
+                    <span>Sep 2025 -- Dec 2025</span>
+                </div>
+                <p class="job-subtitle">Portland State University | CS 161: Introduction to Computer Science in Python</p>
+                <ul>
+                    <li>Supported instruction for introductory computer science in Python.</li>
+                    <li>Delivered lectures and live coding demonstrations on foundational programming concepts.</li>
+                    <li>Held weekly office hours assisting students with assignments, quizzes, and exam preparation.</li>
+                    <li>Graded coursework and provided clear, constructive feedback.</li>
+                </ul>
+            </section>
 
-      <section class="work work5">
-        <h3>September 2024 - December 2025: Technical Course Support Specialist Facilitator</h3>
-        <p></p>
-          <ul>
-            <li>Facilitate weekly lab sessions for introductory and intermediate CS courses.</li>
-            <li>Present recursion, pointers, algorithms, and data structures in accessible formats.</li>
-            <li>Provide one-on-one tutoring to help students grasp challenging material.</li>
-          </ul>
-      </section>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>Technical Course Support Specialist (TCSS)</h2>
+                    <span>Sep 2024 -- Dec 2025</span>
+                </div>
+                <p class="job-subtitle">Portland State University | CS 162, CS 163, CS 302</p>
+                <ul>
+                    <li>Facilitated weekly labs for introductory and intermediate computer science courses.</li>
+                    <li>Explained recursion, pointers, algorithms, and data structures in accessible ways.</li>
+                    <li>Provided one-on-one tutoring to help students master difficult material.</li>
+                </ul>
+            </section>
 
-      <section class="work work6">
-        <h3>April 2023 - October 2024: Wildland Firefighter</h3>
-        <p></p>
-          <ul>
-            <li>Performed fire suppression, sawyer work, hose lay, and line construction under high-pressure.</li>
-            <li>Designated truck driver for the crew, relied upon for transfoporting firefighters to and from the fireline.</li>
-          </ul>
-      </section>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>Wildland Firefighter</h2>
+                    <span>Apr 2023 -- Oct 2024</span>
+                </div>
+                <p class="job-subtitle">Seasonal Crew Member</p>
+                <ul>
+                    <li>Performed fire suppression, sawyer work, hose lays, and line construction in high-pressure conditions.</li>
+                    <li>Served as a designated crew driver responsible for transporting firefighters safely to and from the fireline.</li>
+                </ul>
+            </section>
 
-      <section class="work work6">
-        <h3>April 2022 - June 2023: Bus & Light Rail Vehical Operator (MAX) - TriMet</h3>
-        <p></p>
-          <ul>
-            <li>Operated MAX trains and Buses across all routes safely and reliably.</li>
-            <li>Provided excellent customer service to all riders.</li>
-            <li>Maintained professionalism and on-time performance.</li>
-          </ul>
-      </section>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>Bus and Light Rail Vehicle Operator</h2>
+                    <span>Apr 2022 -- Jun 2023</span>
+                </div>
+                <p class="job-subtitle">TriMet</p>
+                <ul>
+                    <li>Operated MAX trains and buses safely and reliably across transit routes.</li>
+                    <li>Provided strong customer service to riders in a public-facing transportation role.</li>
+                    <li>Maintained professionalism, safety, and schedule reliability.</li>
+                </ul>
+            </section>
 
-      <section class="work work1">
-        <h3>August 2021 - September 2021: IT Technical Support Specialist</h3>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>IT Technical Support Specialist</h2>
+                    <span>Aug 2021 -- Sep 2021</span>
+                </div>
+                <p class="job-subtitle">French American International School</p>
+                <ul>
+                    <li>Provided helpdesk support for teachers and staff across campus.</li>
+                    <li>Assisted with printers, projectors, software issues, and general technical troubleshooting.</li>
+                    <li>Worked in a bilingual environment supporting French-speaking students and faculty.</li>
+                </ul>
+            </section>
 
-        <ul>
-          <li>Helpdesk for all teachers on campus.</li>
-          <li>Aid with printer setup/issues, projectors, computer software problems, and other miscelaneous tech questions.</li>
-          <li>Interact with teachers and students who speak French.</li>
-        </ul>
-      </section>
-
-      <section class="work work3">
-        <h3>2018 - 2019: Tualatin Hills Red Cross Lifeguard</h3>
-        <ul>
-          <li>Attended monthly in-service weekends to swim and perform dummy rescues to be ready for an emergency</li>
-          <li>Performed an emergency rescue on a little girl who fell from the jungle joe and injured her spine.</li>
-        </ul>
-
-     </section>
+            <section class="job-card">
+                <div class="job-header">
+                    <h2>Lifeguard</h2>
+                    <span>2018 -- 2019</span>
+                </div>
+                <p class="job-subtitle">Tualatin Hills Park & Recreation District</p>
+                <ul>
+                    <li>Completed regular in-service rescue training and emergency preparedness drills.</li>
+                    <li>Responded to a real emergency rescue involving a child with a spinal injury.</li>
+                </ul>
+            </section>
+        </section>
     </main>
 
-    <!-- Copyright message for professionalism: -->
-    <footer id="copyright"></footer>
-  </body>
+    <footer class="site-footer">
+        <p>© Nathan Metens</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

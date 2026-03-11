@@ -1,136 +1,153 @@
-/* The main content background with an opacity: */
-.page-content {
-  background: rgb(0, 0, 0, 0.8);
+body {
+  color: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
-/* Hide the small screen text: */
-.small-size-text {
-  display: none;
+.experience-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-/* Enough space so that the page title is not covered by the navbar: */
-#prev-work {
-  margin-top: 80px;
-}
-
-/* Let the modal take up the entire screen: */
-.modal {
-  height: 100vh;
-}
-
-#resume {
-  width: 100%;
-}
-
-/* The container for both the oofty images and the pool images: */
-.flex-container {
-  width: 100%;
+.experience-card {
+  max-width: 980px;
   margin: auto;
-  display: flex; /* Organize images using flex centering for easy viewing */
-  justify-content: center;
-  gap: 10px;
-  overflow: visible;
+  background: rgba(0, 0, 0, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
 }
 
-.fais-image {
-  width: 100%;
-  height: 500px;
-  margin: auto;
-  object-fit: cover;
-  padding: 4px;
+.page-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.65);
 }
 
-/* Center the modal title: */
-h5.modal-title {
-  margin: auto;
+.page-intro {
+  max-width: 860px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #eef3ff;
+  margin-bottom: 24px;
 }
 
-/* Create a grid of buttons to easily organize them: */
-.button-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px;
-  margin: auto;
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  color: white;
+  text-decoration: none;
+}
+
+.action-button.primary {
+  background: #7aa2ff;
+  color: white;
+}
+
+.action-button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.job-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
   padding: 20px;
+  margin-bottom: 18px;
 }
 
-/* The resume button is placed in the second column (middle) and first row: */
-.resume {
-  grid-column-start: 2;
-  grid-row-start: 1;
-
-  /* Resume button design: */
-  color: whitesmoke;
-  background-color: #007a00;
-  border-color: whitesmoke;
+.job-card:last-child {
+  margin-bottom: 0;
 }
 
-/* Oragnize the rest of the buttons in the row beneath the resume in a pyramid shape: */
-.github {
-  grid-column-start: 1;
-  grid-row-start: 2;
-
-  color: whitesmoke;
-  background-color: #171515;
-  border-color: whitesmoke;
-}
-.linkedin {
-  grid-column-start: 2;
-  grid-row-start: 2;
-
-  color: whitesmoke;
-  background-color: #0e76a8;
-  border-color: whitesmoke;
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
-/* All buttons have white background and black text color on mouse hover for consistency: */
-.resume:hover,
-.github:hover,
-.linkedin:hover
-{
-  background-color: white;
-  color: black;
-  border-color: black;
+.job-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  color: white;
 }
 
-/* Change the image and button display for smaller devices: */
-@media (max-width: 600px) {
-  /* Hide text meant for larger screen widths: */
-  .full-size-text {
-    display: none;
+.job-header span {
+  color: #d9e3ff;
+  font-size: 0.96rem;
+  white-space: nowrap;
+}
+
+.job-subtitle {
+  margin-bottom: 12px;
+  color: #c7d8ff;
+  font-size: 0.98rem;
+}
+
+.job-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.job-card li {
+  margin-bottom: 10px;
+  line-height: 1.65;
+  color: #edf2fb;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 16px;
+  color: #d7deef;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .experience-page {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
-  /* Show smaller text for smaller screens: */
-  .small-size-text {
-    display: inline;
+  .experience-card {
+    padding: 20px;
   }
 
-  /* Make images stack on top of each other for a larger view: */
-  .flex-container {
-    width: 100%;
-    margin: auto;
-    display: inline-block;
-    overflow: visible;
+  .page-intro,
+  .job-card li {
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 
-  /* Same as oofty images: */
-  .pool-image {
-    width: 100%;
-    margin: auto;
-    padding: 5px;
+  .action-buttons {
+    flex-direction: column;
   }
 
-  /* The buttons will be wrapped: */
-  .button-container {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-  }
-
-  /* Each button is stacked on the other and is as wide as the container so that they are easier to tap for phones: */
-  .btn {
-    width: 100%;
+  .action-button {
     text-align: center;
   }
 }
