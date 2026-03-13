@@ -20,6 +20,7 @@ $(document).ready(() => {
           body: JSON.stringify(data)
         });
       
-        alert("Message sent!");
+        alert("Thank you! Message sent!");
+        form.reset();
       });
 });
